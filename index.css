@@ -1,0 +1,435 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+  :root{
+    --common-background-color : #1bbc9b;
+  }
+ 
+  
+
+.site-header{
+    background-color: var(--common-background-color);
+    color: #ecfdf9;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    scroll-snap-align: start;
+    
+}
+
+.site-header-content{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.profile-pic{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    box-shadow: #096250 2px 5px 5px;
+}
+
+.course-link{
+    color: #ecfdf9;
+
+}
+
+body{
+    margin: 0;
+    font-family: monospace;
+}
+
+.top{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-bottom: 50px;
+    font-size: 50px;
+}
+.photo-class{
+    text-align: center;
+    animation: bounce 2s infinite;
+}
+
+.container{
+  
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.skills-section{
+
+  background-color : var(--common-background-color);
+  color : white;
+  height : 100vh;
+  display :flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.skills-section-header{
+  display :flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-section-header h1{
+
+  font-size: 110px;
+}
+
+.skills-logos img{
+  height : 90px;
+  width : 90px;
+ 
+}
+
+.skills-logos{
+
+  display: flex;
+  height: 40vh;
+  width: 70vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-box{
+
+  margin : 10px 25px;
+  text-align: center;
+}
+
+.skills-logos p{
+
+  font-size: 20px;
+  font-weight: bold
+}
+
+.bounce { 
+  animation-name: bounce; 
+} 
+
+.bouncing-letters span { 
+  animation-timing-function: linear; 
+  animation-duration: 1s; 
+  animation-iteration-count: 1; 
+  display: inline-block; 
+} 
+
+.bouncing-letters span:hover { 
+  color: whitesmoke; 
+} 
+
+.edu-professional{
+
+  background-color: var(--common-background-color);
+  color: #ecfdf9;
+  height: 100vh;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  scroll-snap-align: start;
+
+  display : grid;
+  /* grid-template-columns: repeat(2 , auto); */
+  grid-template-rows: auto auto;
+
+}
+
+.experience{
+  display: flex;
+  
+}
+.experience li{
+  list-style-type: disc;
+}
+
+div > img {
+
+  height: 20px;
+  width : 20px;
+}
+
+/* .edu-professional{
+
+  display : grid;
+  /* grid-template-columns: repeat(2 , auto); */
+  /* grid-template-rows: auto auto;
+} */ */
+
+.experience{
+
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+
+.heading {
+  margin : 2px 10px;
+ }
+
+.time{
+  margin : 2px 10px;
+  display: flex;
+ }
+
+ .icon{
+
+  margin: 0px 15px;
+ }
+
+ .icon > img {
+
+  position: relative;
+  top : 20px;
+ }
+
+ .time > .content{
+
+  /* margin: 0px 15px;; */
+  position: relative;
+  top : 5px;
+
+ }
+ 
+
+
+
+.experience-1{
+
+  margin : 2px 10px;
+ }
+
+ /* .projects{
+
+  background-color: var(--common-background-color);
+  color: #ecfdf9;
+  height: 100vh;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  scroll-snap-align: start;
+
+  display : grid;
+  /* grid-template-columns: repeat(2 , auto); */
+  /* grid-template-rows: auto auto;
+
+  
+ } */
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce-2 { 
+  
+  20%, 
+  50%, 
+  80%, 
+  to { 
+      transform: scale(1, 1); 
+  } 
+
+  40% { 
+      transform: scale(1.75, 0.65); 
+  } 
+
+  45% { 
+      transform: scale(1.75, 0.65); 
+  } 
+
+  70% { 
+      transform: scale(1.25, 0.75); 
+  } 
+
+  90% { 
+      transform: scale(1.15, 0.85); 
+  } 
+} 
+
+
+/* Adding color to first section */
+#one {
+  background-color: #E6358B;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+
+/* Adding color to second section */
+#two {
+  background-color: #22A2AF;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adding color to third section */
+#three {
+  background-color: #7CEC9F;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adding color to fourth section */
+#four {
+  background-color: #D8A928;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General styling to our main section */
+.projects {
+  width: 100vw;
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* scroll-snap-type: y mandatory;
+  overflow: auto; */
+  scroll-snap-align: start;
+  height: 100vh;
+  
+}
+
+/* Styling to each individual section */
+.section {
+  /* 100% of parent */
+  width: 100%; 
+  height: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  /* scroll-snap-align: start; */
+}
+
+/* For hiding scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 > span{
+  font-size: 110px;;
+}
+
+.footer{
+  position: fixed;
+  left : 4px;
+  bottom: 2px;
+}
+
+.contact{
+
+  background-color: var(--common-background-color);
+    color: #ecfdf9;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    scroll-snap-align: start;
+
+    font-size: 40px;
+    text-align: center;
+}
+.footer img{
+  
+  border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    box-shadow: #096250 2px 5px 5px;
+}
+
+
+.top-right-box .contact-button {
+  background: #f0f8ff;
+  padding: 8px 10px;
+  display: block;
+  border: 2px solid #f0f8ff;
+  background-color: transparent;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 17px;
+  color: #f0f8ff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  /* position: fixed; */
+  /* right : 10px;
+  top: 5px; */
+  margin: 2px 2px;
+  
+}
+.top-right-box .resume {
+  background: #f0f8ff;
+  padding: 8px 15px;
+  display: block;
+  border: 2px solid #f0f8ff;
+  background-color: transparent;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 17px;
+  color: #f0f8ff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  /* position: fixed; */
+  /* right : 10px;
+  top: 5px; */
+  margin: 2px 2px;
+  
+}
+
+.top-right-box a{
+  text-decoration: none;
+}
+
+.contact-button:hover{
+  background-color: white;
+
+}
+.resume:hover{
+  background-color: white;
+
+}
+
+.top-right-box{
+  display: flex;
+  position: fixed;
+  top:5px;
+  right: 5px;
+}
